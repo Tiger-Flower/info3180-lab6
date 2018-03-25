@@ -1,0 +1,18 @@
+ <div>
+      <div class="form-inline d-flex justify-content-center">     
+    	<div class="form-group mx-sm-3 mb-2">         
+    		<label class="sr-only" for="search">Search</label>         
+    		<input type="search" name="search" v-model="searchTerm" id="search" class="form-control mb-2 mr-sm-2" placeholder="Enter search term here" />         
+    		<p>You are searching for {{ searchTerm }}</p>     
+    	</div> 
+      </div> 
+        <div class="news d-flex flex-wrap">     
+    	  <div v-for="article in articles" class="card d-flex flex-sm-wrap news-item m-3 p-2">
+            <h2 class="card-title">{{article.title}}</h2>
+            <div class="card-body">  
+            <img class="card-img" alt="Card image cap" v-bind:src="article.urlToImage">
+                <p class="card-text">{{article.description}}</p>
+     
+         </div>
+       </div>
+   </div>

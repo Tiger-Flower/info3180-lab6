@@ -1,7 +1,28 @@
 body {
     padding-top: 5rem;
+    background-color: #00000030;
 }
 
 footer  {
     padding-top: 20px;
+}
+
+
+news-item{
+    max-height: 10%;
+    max-width: 40%;
+}
+
+
+.card.d-flex.flex-sm-wrap.news-item {
+    max-height: 10%;
+    max-width: 30%;
+    background-color: white;
+    border-top-color: #42b883;
+    border-top-style: solid;
+    border-top-width: 5px; 
+}
+
+.bg {
+  background-color: #35495e !important;
 }
